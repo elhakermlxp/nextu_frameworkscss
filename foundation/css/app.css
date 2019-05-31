@@ -1,0 +1,70 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+* {
+    font-family: Roboto;
+}
+.search-text {
+    position: relative;    
+}
+.search-text > .icon {
+    position: absolute;
+    left: 0.5em;
+    top: 0.5em;
+}
+.search-text > input { 
+    padding-left: 30px;
+    border-radius: 20px !important;
+}
+.search-text:hover .icon, .search-text:active .icon, .search-text:focus .icon{
+    color: #1779ba;
+    transition: all 1s;
+}
+body {
+    background-image: url('../img/background.jpg');    
+}
+.grid-container {
+    background: rgba(255,255,255,.75);
+    padding: 1em 2em;
+}
+.historial > li  a {
+ padding: 5px 10px;
+ border-bottom: solid 1px #abc;
+}
+.historial > li:hover  a {
+    background: rgba(0,0,0,.25);
+    transition: all 1s ease;
+   }
+.historial li:first-child  a {
+    color: #000 !important;    
+}
+.fake-input {
+    padding: 5px 10px;
+    border:solid 1px #abc;
+    background-color: #fff;
+    border-radius: 15px !important;
+}
+.fake-input img {
+    border-radius: 50%;
+    margin: 0 !important;
+}
+.thumbnail:hover {
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    transition: all 0.5s;
+}
+h1 + small {
+    margin-top: -15px !important;
+    display: block;
+}
+
+img.big {
+    width: 100%;
+}
+.large::before {
+    font-size: 2em;
+}
+.medium::before {
+    font-size: 1.5em;
+}

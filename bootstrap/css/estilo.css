@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+* {
+    font-family: Roboto;
+}
+body {
+    background: #abc;
+}
+article {
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 5px;
+}
+.nav-item:hover {
+    background: rgba(255,255,255,0.25);
+    transition: all 0.5s;
+}
+.redes {
+    height: 25px;
+    vertical-align: bottom;
+}
+.img-link:hover img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}

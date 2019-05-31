@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/material.woff2') format('woff2');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-image: url('../img/background.jpg');
+  }
+  .div-fixed {
+    display:block;
+    height:calc(100vh / 10);
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:-1;
+    background: #2196f3;
+  }
+  .img-link {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+  .img-link:hover img {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+  .subtitle{
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+  .logo  {
+    animation: mundo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;  
+  }
+
+  .justify-align {
+    text-align: justify;
+  }
+  p + p {
+    margin-top: 10px !important;
+  }
+
+  h3, h4 {
+    margin: 0;
+  }
+.full {
+  width:100%;
+}
+  @keyframes mundo {
+    from { 
+      transform: rotate(0deg);
+  }
+
+  to {
+      transform: rotate(360deg);
+  }
+  }
